@@ -31,7 +31,8 @@ class Solution {
         StringBuilder sb = new StringBuilder();
         
         return combination(number, N, R, 0, 0, sb);
-    }
+    }  
+    // 조합으로 푸니 원래 숫자들의 자리 유지가 안 된 숫자는 포함이 안 된다함
     // 순열로 하니 시간 초과 나옴 ㅜㅡ
     */
     
