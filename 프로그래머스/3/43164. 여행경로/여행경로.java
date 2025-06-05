@@ -23,7 +23,7 @@ class Solution {
         return route.toArray(new String[0]);
     }
     private void dfs(String airport, Map<String, PriorityQueue<String>> graph) {
-         PriorityQueue<String> arrivals = graph.get(airport);
+        PriorityQueue<String> arrivals = graph.get(airport);
         while (arrivals != null && !arrivals.isEmpty()) {
             String next = arrivals.poll();
             dfs(next, graph);
